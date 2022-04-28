@@ -1,0 +1,28 @@
+body {
+   text-align: center;
+   background-color: #cce2ff;
+   background-image: linear-gradient(to right, #122531, #122531 3px, #cce2ff 3px, #cce2ff );
+   background-size: 20px 100%;
+   margin: 0 auto;
+}
+
+#full-size-img {
+   margin: 0.5% auto;
+   border: 5px solid black;
+}
+
+#close-window {
+   margin: 0;
+}
+
+button {
+   background-color: white;
+   border-radius: 5px;
+   border: 3px solid black;
+   margin: 0 2%;
+   padding: 0.5% 4%;
+}
+
+button:hover {
+   background: #edebeb;
+}
