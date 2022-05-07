@@ -17,7 +17,7 @@ header {
 
 header h1 {
    text-align: center;
-   padding: 0.5rem 0 1rem;
+   padding: 3vh 0 4vh;
    margin: 0 0 0.6rem;
    color: white;
    font-size: 3rem;
@@ -48,7 +48,7 @@ article {
    text-align: center;
    height: 135px;
    width: 40px;
-   top: 67px;
+   top: 20vh;
 }
 
 #leftarrow {
@@ -77,7 +77,7 @@ article {
    display: block;
    width: 100%;
    position: absolute;
-   top: 315px;
+   top: 52vh;
    color: white;
    text-align: center;
 }
@@ -93,30 +93,31 @@ article {
 #fig2 {
    z-index: 10;
    left: 13%;
-   top: 34px;
+   top: 11vh;
 }
 
 #fig3 {
    z-index: 20;
    left: 50%;
    margin-left: -250px;
-   top: 0;
+   top: 6vh;
 }
 
 #fig4 {
    z-index: 10;
    right: 13%;
-   top: 34px;
+   top: 11vh;
 }
 
 /* favourites hub */
 #favourites-hub {
    position: absolute;
    background-color: black;
-   top: 450px;
-   width: 100%;
+   width: 75%;
    margin: 0.8% auto 0;
    padding: 1% 0 0.5%;
+   position: fixed;
+   bottom: 0px;
 }
 
 #favourites-hub h1 {

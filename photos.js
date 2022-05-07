@@ -80,16 +80,6 @@ function previewFive() {
    articleEl.insertBefore(firstFigure, document.getElementById("fig2"));
    
    figureCount = 5;
-   //change button to hide extra images
-   var numberButton = document.querySelector("#fiveButton p");
-   numberButton.innerHTML = "Show fewer images";
-   if (numberButton.addEventListener) {
-      numberButton.removeEventListener("click", previewFive, false);
-      numberButton.addEventListener("click", previewThree, false);
-   } else if (numberButton.attachEvent) {
-      numberButton.detachEvent("onclick", previewFive);
-      numberButton.attachEvent("onclick", previewThree);
-   }
    
    // add appropriate src values to two new img elements
    document.getElementsByTagName("img")[0].src = "images/IMG_0" + photoOrder[0] + "sm.jpg";
@@ -149,12 +139,6 @@ function createEventListeners() {
      mainFig.attachEvent("onclick", zoomFig);
    }
    
-   var showAllButton = document.querySelector("#fiveButton p");
-   if (showAllButton.addEventListener) {
-      showAllButton.addEventListener("click", previewFive, false);
-   } else if (showAllButton.attachEvent) {
-      showAllButton.attachEvent("onclick", previewFive);
-   }
 }
 
 /* create event listeners and populate image elements */
@@ -189,8 +173,6 @@ function removeFromFavourites(fileName) {
 }
 
 function populateFavourites () {
-   if (favouritesArray.length !== 0) {
-      favouritesHub.style.display = "block";
       for (let index=0; index<5; index++) {
          let favouriteImg = document.querySelector("#fav-" + (index + 1));
   
@@ -202,9 +184,6 @@ function populateFavourites () {
         favouriteImg.src = favouritesArray[index].slice(0,-4) + "sm.jpg";
         }
       }
-   } else {
-      favouritesHub.style.display = "none";
-   }  
 }
 
 for (let m = 0; m < 5; m++) {
